@@ -26,16 +26,16 @@ document.addEventListener('keydown', (e) => {
   cells[pacmanPosition].classList.remove('pacman');
 
   switch (e.key) {
-    case 'ArrowUp':
+    case 'w':
       if (pacmanPosition - width >= 0) pacmanPosition -= width;
       break;
-    case 'ArrowDown':
+    case 'A':
       if (pacmanPosition + width < width * width) pacmanPosition += width;
       break;
-    case 'ArrowLeft':
+    case 'S':
       if (pacmanPosition % width !== 0) pacmanPosition -= 1;
       break;
-    case 'ArrowRight':
+    case 'D':
       if (pacmanPosition % width < width - 1) pacmanPosition += 1;
       break;
   }
